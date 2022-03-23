@@ -1,0 +1,676 @@
+/*import*/
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@300;500;700&display=swap");
+
+
+
+/*reseteo*/
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+   
+    
+}
+
+body{
+    max-height: 100vh;
+}
+
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    display: inline-block;
+}
+h1{
+    font-size: 1.5em;
+}
+
+.btn-primary{
+    color: balck !important;
+    background-color: black!important;
+    border-radius: 2px solid black !important;
+    border: 1px solid black;
+    margin-top:0.5rem ;
+    width: 40%;
+}
+
+.aside{
+    background-color: yellow !important;
+}
+
+.aside__head{
+    background-color: rgb(37, 37, 37) !important;
+    color: yellow !important;
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-size: 1.7em;
+}
+
+.offcanvas-title h5{
+    font-size: 100em !important;
+}
+
+.aside__btn{
+    color:yellow !important;
+}
+mark{
+    background-color: yellow;
+}
+
+/* -------- */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    /* background-image:url(../img/fondo_myo.png) ; */
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+
+}
+
+.back__img{
+    background-image:url(../img/fondo__myo.png) ;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+} 
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+
+
+.section__nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    width: 100%;
+    
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-basis: 15%;
+    flex-wrap: wrap;
+    
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 85%;
+    /* justify-content: space-between; */
+    font-size: 3.5em;
+   
+}
+
+
+.item{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 5px;
+}
+
+.menu__item{
+    text-decoration: none;
+
+}
+.menu__item:hover {
+    /* background-color:rgb(59, 58, 58); */
+    text-decoration: line-through;
+    color: rgb(62, 62, 62);
+    transition: all .5s ease-in-out;
+}
+
+.menu__item:visited{
+    text-decoration:line-through;
+    transition: all .5s ease-in-out;
+    
+}
+.menu__item--active{
+    text-decoration-line: line-through;
+}
+
+
+.menu__item--logo{
+    justify-content: center;
+
+}
+
+.menu__item--logo:hover {
+    background-color:yellow;
+    color: white;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+}
+
+header{
+    min-height: 10vh;
+    /* background-color: yellow; */
+ 
+}
+
+
+
+/*CONTACT*/
+/*FORMULARIO*/
+
+
+
+.formulary{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.content{
+    display: flex;
+    flex-direction:column;
+    max-width:1080px;
+    width: 50%;
+    justify-content:center;
+    
+}
+
+.content__saludo{
+    display: flex;
+    flex-basis: 40%;
+    font-size: 1.5em;
+    padding: 5px;
+    margin-bottom: 50px;
+   
+
+}
+
+
+.content__mail{
+    justify-content: center;
+    flex-basis: 50%;
+    display: flex;
+    padding: 25px;
+    background-color:whitesmoke;
+    width: 100%;
+    border-radius: 15px;
+
+
+}
+
+.content__contact__item{
+    background-color:whitesmoke;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    border-style: none;
+    font-family: 'Nunito Sans', sans-serif;font-size:large;
+    font-size: 12px;
+    border-bottom:solid 1px;
+    width: 90%;
+}
+
+
+.content__contact__btn{
+    font-family: 'Nunito Sans', sans-serif;font-size:large;
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+    background-color:rgb(255, 230, 3);
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.content__contact__btnClean{
+    font-family: 'Nunito Sans', sans-serif;font-size:large;
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+
+
+
+
+/* FOOTER */
+
+/* footer{
+    display: flex;
+    flex-direction: column;
+    left:0px;
+    bottom:0px;
+    width: 100%;
+    min-height: 10vh;
+} */
+
+.footer {
+    display: flex;
+    flex-direction:column;
+    height:10vh;
+    background-color: rgb(16, 16, 16);  
+    align-items: center;
+    padding: 2rem;
+    bottom: 15px;
+    color: cornsilk;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footer__item{
+    display: flex;
+    margin-left: 1rem;
+}
+.footer__item__link{
+    margin-left: 1rem;
+}
+
+.footer__txt{
+    display: flex;
+}
+
+
+/*sobre mi*/
+
+
+.about-me{
+   display: flex;
+   flex-direction: row; 
+   max-width: 100%;
+   flex-wrap: wrap;
+   background-color: rgb(228, 228, 228);
+   justify-content: center;
+   
+}
+
+.description{
+    margin: 200px 80px; 
+    flex-wrap: wrap;  
+}
+
+.description__titulo {
+    display:flex;
+    flex-basis: 50%;
+    align-items:flex-end;/*vertical*/
+    margin-bottom: 15px;
+    font-size: 4.0em;
+}
+.description__titulo h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight:900;
+}
+
+
+.description__img { 
+    display: flex;
+    max-height: 100vh;
+    padding: 5px;
+    text-align:center;
+    justify-content: center;
+
+}
+
+.description__img__avatar {
+    display: flex;
+    /* min-width: 320px; */
+    /* box-sizing: border-box; */
+    margin:15px 50px;
+    border-radius: 50%;
+    
+}
+
+.description__text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:1em;
+    flex-basis: 50%;/*vertical*/
+    /* font-size: 1.5em; */
+    padding: 5px;
+    width: 100px;
+}
+
+
+
+
+/*CONTACTO*/
+/* header{
+    width: 100%;
+    position:absolute;
+    left:0px;
+    z-index: 1;
+} */
+
+.header__top{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+   
+}
+
+.navbar__top{
+    min-height: 10vh;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1080px;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+
+.section__nav__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.logo__top{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-basis:30%;
+    flex-wrap: wrap;
+    justify-self:center;
+}
+
+
+.menu__top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    font-size: 1.3em;
+   
+}
+
+
+
+
+/*MAIN ILSUTRACIONES*/
+
+
+.work{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+
+
+.article__work{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    max-width: 1080px;
+    
+
+}
+
+.work__grid{ 
+    display: grid;
+    grid-template-columns:auto 60%;
+    grid-template-rows:repeat(4,1fr);
+    grid-template-areas: 
+   
+    "art-1 imagen-1"
+    "imagen-2 imagen-2"
+    "art-3 imagen-3"
+    "imagen-4 imagen-5";
+
+    width: 70%;
+    max-width: 1080px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-1{
+    grid-area: banner-1;
+    background-color: chartreuse;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.art-1{
+    grid-area: art-1;
+    
+   
+}
+
+.work__text p{
+    font-size: 3em;
+}
+
+
+.imagen-1{
+    grid-area: imagen-1;
+    display: flex;
+    justify-content: center;
+}
+
+.art-2{
+    grid-area: art-2;
+    background-color: rgb(201, 201, 201);
+}
+
+
+.imagen-2{
+    grid-area: imagen-2;
+    height: 100%;
+}
+.art-3{
+    grid-area: art-3;
+}
+
+
+.imagen-3{
+    grid-area: imagen-3;
+    height: 100%;
+}
+.imagen-3{
+    grid-area: imagen-3;
+    height: 100%;
+}
+.imagen-4{
+    grid-area:imagen-4;
+    height: 100%;
+}
+
+.imagen-5{
+    grid-area: imagen-5;
+    height: 100%;
+}
+
+
+.work__text{
+    display: flex;
+    text-align:left;
+    align-items:center;
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.work__img{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+
+}
+
+
+/*WORK*/
+
+.work-d{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    margin-top: 4rem;
+    margin-bottom: 0.2rem;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+    .section__nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 5px;
+        width: 100%;
+    }
+    .item{
+        font-size: 0.8em;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;   
+        width: 90%;
+        justify-content:center;
+    }
+    
+
+    .about-me{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .description__titulo {
+        font-family: nuni;
+        display:flex;
+        flex-basis: 200%;
+        width: 100%;
+        font-size: 3.5em;
+        
+    }
+
+    .description__text {
+        flex-basis: 90%;
+        padding: 0.5rem;
+        width: 100px;
+        text-align:left;
+    }
+    .article__work{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+    
+    }
+    ul.menu{
+        display: flex;
+        justify-content: center;}
+
+    .work__grid{ 
+        /* grid-template-columns:1fr;
+        grid-template-areas:
+        "art-1 "
+        "imagen-1"
+        "imagen-2"
+        " imagen-2"
+        "art-3"
+        " imagen-3"
+        "imagen-4 "
+        "imagen-5"; */
+        display: none;
+        
+    }
+   
+    /* .work__grid__mobil{
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "art-1 "
+        "imagen-1"
+        "imagen-2"
+        " imagen-2"
+        "art-3"
+        " imagen-3"
+        "imagen-4 "
+        "imagen-5";
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+
+    } */
+
+    .btn-primary{
+        width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 768px) {
+    .work__grid__mobil{
+        display: none;
+    }
+
+}
